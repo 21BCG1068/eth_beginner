@@ -1,12 +1,31 @@
-# eth_beginner
 
-Contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
-Contract will have a mapping of addresses to balances (address => uint)
-There will be a mint function that takes two parameters: an address and a value. 
-The function then increases the total supply by that number and increases the balance 
-of the “sender” address by that amount
-Contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. 
-It will take an address and value just like the mint functions. It will then deduct the value from the total supply 
-and from the balance of the “sender”.
-Lastly, burn function should have conditionals to make sure the balance of "sender" is greater than or equal 
-to the amount that is supposed to be burned.
+# Our Token
+
+Introducing "OurToken" - a custom contract built on Ethereum using Solidity. This token facilitates token creation and destruction, tracking total supply and individual balances. The program ensures sufficient balance before token burning. The contract adheres to the MIT license, enabling free usage and distribution. 
+
+## Description
+
+Introducing "OurToken," a Solidity smart contract designed for the Ethereum blockchain. The contract stores essential token details, such as name, abbreviation, and total supply, in public variables. It utilizes a mapping to efficiently manage ownership by associating Ethereum addresses with their respective token balances. The contract offers  functions for creating new tokens, increasing total supply, and updating recipient balances, and "burn" for destroying tokens, reducing total supply, and deducting from token holder balances. Notably, the "burn" function includes a balance check to ensure sufficient funds before burning. With these functionalities, the contract provides a comprehensive solution for secure and decentralized token management on the Ethereum blockchain.
+
+
+## Getting Started
+
+### Executing program
+
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
+
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the functions. 
+
+## Author
+
+Arshdeep Kaur
+
+## License
+
+This project is licensed under the MIT License 
