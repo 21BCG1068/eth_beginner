@@ -5,7 +5,15 @@ Introducing "OurToken" - a custom contract built on Ethereum using Solidity. Thi
 
 ## Description
 
-Introducing "OurToken," a Solidity smart contract designed for the Ethereum blockchain. The contract stores essential token details, such as name, abbreviation, and total supply, in public variables. It utilizes a mapping to efficiently manage ownership by associating Ethereum addresses with their respective token balances. The contract offers  functions for creating new tokens, increasing total supply, and updating recipient balances, and "burn" for destroying tokens, reducing total supply, and deducting from token holder balances. Notably, the "burn" function includes a balance check to ensure sufficient funds before burning. With these functionalities, the contract provides a comprehensive solution for secure and decentralized token management on the Ethereum blockchain.
+This Solidity smart contract named "OurTokens" represents a simple token system with basic minting and burning functionality. It uses the SPDX-License-Identifier tag to specify that it is licensed under the MIT license. Here's a short explanation of the code:
+
+The contract defines the token's name as "Encanto" and its abbreviation as "enc". Additionally, it maintains a variable called "total_sum" to keep track of the total supply of tokens in circulation.
+
+1. It uses a mapping named "balances" to associate token balances with addresses. Each address is mapped to the number of tokens it holds.
+
+2. The "mint" function allows the contract owner to create new tokens and assign them to a specified address. It increases the total supply and updates the balance of the given address.
+
+3. The "burn" function allows the contract owner to remove tokens from a specified address, effectively reducing the total supply and updating the balance of the address.
 
 
 ## Getting Started
