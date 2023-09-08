@@ -1,3 +1,7 @@
+# Description
+The program introduces a simple custom token called "OurToken" built on the Ethereum blockchain using Solidity. It allows for the creation and destruction of tokens, keeping track of their total supply and individual balances. Overall, it provides a user-friendly and accessible framework for creating and managing custom tokens on the Ethereum platform, offering a reliable solution for token issuance and tracking.
+
+
 # Explanation 
 SPDX License Identifier: A comment that indicates the license under which the code is distributed.
 
@@ -53,7 +57,8 @@ contract OurTokens {
 
 
 
-# Execution 
+# Getting Started
+## Execution 
 
 Open Remix:
 Open the Remix IDE in your web browser.
@@ -108,30 +113,9 @@ Burn Function: Defines a function named burn to destroy tokens, updating the tot
 
 Closing Brace: Marks the end of the OurTokens contract.
 
+# License
+This contract is licensed under the MIT License. SPDX-License-Identifier: MIT.
 
+# Author
+Arshdeep Kaur
 
-### Execution Summary:
-
-
-
-
-
-Open Remix: Use the Remix IDE via your web browser.
-
-Create File: Make a new file named OurTokens.sol.
-
-Paste Code: Copy the provided Solidity code into this file.
-
-Compile Contract: In the Solidity Compiler tab, choose version 0.8.18, then click Compile.
-
-Deploy Contract: Under Deploy & Run Transactions, select OurTokens and choose an Ethereum environment. Deploy the contract.
-
-Interact: Use the deployed contract interface to:
-
-Mint tokens by specifying an address and quantity.
-
-Burn tokens by inputting an address and amount.
-
-Check balances for addresses.
-
-View the token's name, abbreviation, and total supply.
