@@ -1,8 +1,8 @@
-# Description
+# Eth Beginner
 The program introduces a simple custom token called "OurToken" built on the Ethereum blockchain using Solidity. It allows for the creation and destruction of tokens, keeping track of their total supply and individual balances. Overall, it provides a user-friendly and accessible framework for creating and managing custom tokens on the Ethereum platform, offering a reliable solution for token issuance and tracking.
 
 
-# Explanation 
+# Getting Started
 SPDX License Identifier: A comment that indicates the license under which the code is distributed.
 
 Solidity Version Pragma: Specifies the version of the Solidity compiler to be used for compiling the contract.
@@ -29,36 +29,7 @@ Closing Brace: Indicates the end of the OurTokens contract.
 In summary, the code defines a Solidity smart contract representing a simple token system. It allows the creation and destruction of tokens, tracks balances for different addresses, and maintains a total sum of all tokens.
 
 
-
-# CODE
-
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
-
-contract OurTokens {
-    string public token_name = "Encanto";
-    string public token_abbr = "enc";
-    uint public total_sum = 0;
-
-    mapping (address => uint) public balances;
-
-    function mint (address add, uint val) public {
-        total_sum += val;
-        balances[add] += val;
-    }
-
-
-    function burn (address add, uint val) public {
-        total_sum -= val;
-        balances[add] -= val;       
-    }
-
-}
-
-
-
-# Getting Started
-## Execution 
+# Execution 
 
 Open Remix:
 Open the Remix IDE in your web browser.
@@ -86,16 +57,9 @@ token_abbr: enc.
 total_sum: You can read the total sum of tokens.
 
 
-
-
-
 # SUMMARY 
 
 ### Code Summary:
-
-
-
-
 
 SPDX License Identifier: A comment indicating the license under which the code is distributed.
 
