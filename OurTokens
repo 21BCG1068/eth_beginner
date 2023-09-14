@@ -15,8 +15,12 @@ contract OurTokens {
 
 
     function burn (address add, uint val) public {
-        total_sum -= val;
-        balances[add] -= val;       
+        if (total_sum < val || balances[add] < val) {
+        
+     } else {
+        total_sum -= val;  
+        balances[add] -= val; 
+            
+     }
     }
-
 }
